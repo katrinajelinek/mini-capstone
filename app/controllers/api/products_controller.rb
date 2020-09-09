@@ -1,6 +1,11 @@
 class Api::ProductsController < ApplicationController
   def product_action
-    @products = Product.all
+    @product = Product.find_by(id: 1)
     render "product.json.jb"
+  end
+
+  def all
+    @products = Product.all
+    render "all.json.jb"
   end
 end
