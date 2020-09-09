@@ -6,12 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# product = Product.new(name: "Banana", price: 0.50, image_path: , description: "a ripe banana")
+Product.create(name: "Banana", price: 0.50, image_path: "filler", description: "a ripe banana")
 
-product2 = Product.new(name: "Tide Pods", price: 18, image_path: , description: "laundry detergent vessel")
+Product.create(name: "Tide Pods", price: 18, image_path: "filler", description: "laundry detergent vessel")
 
-product3 = Product.new(name: "Xbox", price: 100, image_path: , description: "home gaming system")
+Product.create(name: "Xbox", price: 100, image_path: "filler", description: "home gaming system")
 
-product4 = Product.new(name: "Hair Brush", price: 2, image_path: , description: "hair detangling tool")
+Product.create(name: "Hair Brush", price: 2, image_path: "filler", description: "hair detangling tool")
 
-product5 = Product.new(name: "Dog Toy", price: 4, image_path: , description: "durable squeaky toy for dogs")
+Product.create(name: "Dog Toy", price: 4, image_path: "filler", description: "durable squeaky toy for dogs")
