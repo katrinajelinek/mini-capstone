@@ -1,0 +1,2 @@
+class RemoveTaxAndTotalFromProduct < ApplicationRecord
+end

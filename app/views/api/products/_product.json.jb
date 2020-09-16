@@ -3,6 +3,7 @@
  price: product.price,
  image_path: product.image_path,
  description: product.description,
+ inventory: product.inventory,
  formatted: {
   discount: product.is_discounted?,
   tax: number_to_currency(product.tax),
