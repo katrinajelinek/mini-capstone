@@ -5,6 +5,13 @@ class Product < ApplicationRecord
   validates :price, presence: true, numericality: { greater_than: 0 }
   validates :inventory, numericality: { greater_than: 0 }
 
+  # def supplier
+  #   Supplier.find_by(id: supplier_id)
+  # end
+
+  belongs_to :supplier
+  has_many :images
+
   def is_discounted?
     price <= 10
   end
