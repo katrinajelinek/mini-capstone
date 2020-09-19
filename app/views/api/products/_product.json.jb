@@ -3,7 +3,7 @@
  price: product.price,
  description: product.description,
  inventory: product.inventory,
- #  image: product.image.url,
+ images: product.images,
  supplier_info: {
   supplier_id: product.supplier.id,
   supplier_name: product.supplier.name,
