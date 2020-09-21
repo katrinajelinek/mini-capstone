@@ -1,17 +1,18 @@
 { id: product.id,
- name: product.name,
- price: product.price,
- description: product.description,
- inventory: product.inventory,
- images: product.images,
- supplier_info: {
+  name: product.name,
+  price: product.price,
+  description: product.description,
+  inventory: product.inventory,
+  images: product.images,
+  supplier_info: {
   supplier_id: product.supplier.id,
   supplier_name: product.supplier.name,
   supplier_email: product.supplier.email,
   supplier_phone_number: product.supplier.phone_number,
 },
- formatted: {
+  formatted: {
   discount: product.is_discounted?,
   tax: number_to_currency(product.tax),
   total: number_to_currency(product.total),
-} }
+},
+  current_user: current_user }

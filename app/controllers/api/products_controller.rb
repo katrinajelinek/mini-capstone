@@ -30,7 +30,11 @@ class Api::ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
-    render "show.json.jb"
+    if current_user
+      render "show.json.jb"
+    else
+      render json: {}
+    end
   end
 
   def create
