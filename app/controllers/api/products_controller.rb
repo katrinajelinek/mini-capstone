@@ -1,4 +1,6 @@
 class Api::ProductsController < ApplicationController
+  before_action :authenticate_admin, except: [:index, :show]
+
   def index
     @products = Product.all
 
@@ -30,18 +32,13 @@ class Api::ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
-    if current_user
-      render "show.json.jb"
-    else
-      render json: {}
-    end
+    render "show.json.jb"
   end
 
   def create
     @product = Product.new(
       name: params[:name],
       price: params[:price],
-      image_path: params[:image_path],
       description: params[:description],
       inventory: params[:inventory],
     )
@@ -56,7 +53,6 @@ class Api::ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @product.name = params[:name] || @product.name
     @product.price = params[:price] || @product.price
-    @product.image_path = params[:image_path] || @product.image_path
     @product.description = params[:description] || @product.description
     @product.inventory = params[:inventory] || @product.inventory
     if @product.save

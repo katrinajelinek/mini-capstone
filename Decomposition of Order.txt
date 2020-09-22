@@ -1,0 +1,8 @@
+Create a method called Order that includes user_id, product_id, and quantity, subtotal, tax, and total to the table
+In your order model, add the line of code "belongs_to :user" and "belongs_to :product".
+In your product model, put the line of code "has_many :orders"
+In your users model, put the line of code "has_many :orders"
+In routes add "orders" => "orders#create"
+Create an Orders controller 
+Make a create method in your orders controller
+Create show route to show what the user ordered
