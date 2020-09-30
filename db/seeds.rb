@@ -25,17 +25,28 @@
 #    { name: "Plants" }]
 # )
 
-CategoryProduct.create!(
-  [
-    { product_id: 1, category_id: 1 },
-    { product_id: 3, category_id: 2 },
-    { product_id: 10, category_id: 2 },
-    { product_id: 2, category_id: 3 },
-    { product_id: 3, category_id: 4 },
-    { product_id: 5, category_id: 4 },
-    { product_id: 11, category_id: 4 },
-    { product_id: 7, category_id: 5 },
-    { product_id: 8, category_id: 6 },
-    { product_id: 9, category_id: 6 },
-  ]
-)
+# CategoryProduct.create!(
+#   [
+#     { product_id: 1, category_id: 1 },
+#     { product_id: 3, category_id: 2 },
+#     { product_id: 10, category_id: 2 },
+#     { product_id: 2, category_id: 3 },
+#     { product_id: 3, category_id: 4 },
+#     { product_id: 5, category_id: 4 },
+#     { product_id: 11, category_id: 4 },
+#     { product_id: 7, category_id: 5 },
+#     { product_id: 8, category_id: 6 },
+#     { product_id: 9, category_id: 6 },
+#   ]
+# )
+
+# CartedProduct.create!(
+#   [
+#     { user_id: 1, product_id: 5, quantity: 2, status: "carted" },
+#     { user_id: 1, product_id: 3, quantity: 1, status: "carted" },
+#     { user_id: 2, product_id: 5, quantity: 1, status: "carted" },
+#     { user_id: 2, product_id: 11, quantity: 5, status: "carted" },
+#     { user_id: 2, product_id: 9, quantity: 2, status: "carted" },
+#     { user_id: 1, product_id: 7, quantity: 10, status: "carted" },
+#   ]
+# )

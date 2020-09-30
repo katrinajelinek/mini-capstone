@@ -1,0 +1,11 @@
+Generate migration to change columns in orders table
+Migrate change after checking vs code
+Generate carted products model
+Make associations between carted_products, order, users, and products
+  Order has_many carted products, belongs_to user.
+  Carted products belongs_to an order, belongs_to a user
+  User has_many carted products, has_many orders through carted products,
+  Products ?
+Make data and test it
+In orders controller, edit the create method to match schema 
+Write logic in orders controller that if an order is saved, change status and order_id in carted products table
