@@ -6,3 +6,5 @@
     <img src="<%= @product.images[0].url %>"> <br>
   <% end %>
   
+  <a href="/products/<% @product.id %>/edit">Edit Product</a>
+  <a href="/products/<% @product.id %>" data-method="delete">Delete Product</a>
