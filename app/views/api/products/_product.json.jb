@@ -3,7 +3,7 @@
  price: product.price,
  description: product.description,
  supplier_name: product.supplier.name,
- categories: product.categories,
+ categories: product.categories.name,
  images: product.images,
  formatted: {
   discount: product.is_discounted?,
